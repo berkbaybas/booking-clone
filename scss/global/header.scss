@@ -1,0 +1,95 @@
+//start emergancy message content
+.emergency-message-content {
+  display: flex;
+  align-items: center;
+  height: 60px;
+
+  p {
+    color: #a30000;
+    line-height: 20px;
+  }
+}
+
+//end emergency message content
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-navy-blue;
+  height: 64px;
+
+  button:hover {
+    background-color: #ffffff1f;
+    transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .container {
+    display: flex;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+
+    .icon-logo {
+      color: white;
+      width: 144px;
+      height: 24px;
+    }
+  }
+  &-menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+    &-helper {
+      display: flex;
+      align-items: center;
+      button {
+        padding: 12px;
+        font-size: 16px;
+        color: white;
+        background-color: transparent;
+        border-radius: 3px;
+        & + button {
+          margin-left: 8px;
+        }
+      }
+      .icon-question-mark {
+        height: 24px;
+        width: 24px;
+      }
+    }
+
+    .btn-property {
+      background-color: transparent;
+      color: white;
+      padding: 8px;
+      margin-left: 8px;
+      border: 1px solid white;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    &-user {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+
+      button {
+        background-color: white;
+        color: $color-text-blue;
+        padding: 8px 16px;
+        margin-left: 8px;
+        border-radius: 3px;
+        font-weight: 500;
+
+        &:hover {
+          background-color: #f6f8ff;
+        }
+      }
+    }
+  }
+}
