@@ -1,0 +1,36 @@
+.Partners {
+  background-color: $color-navy-blue;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btn-property {
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    margin-left: 8px;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #ffffff1f;
+    }
+  }
+}
+
+.Footer-toplink {
+  border-top: 0.5px solid white;
+  background-color: $color-navy-blue;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  a {
+    text-decoration: underline;
+    padding: 16px;
+    color: white;
+  }
+}

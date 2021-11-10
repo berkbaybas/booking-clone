@@ -118,6 +118,57 @@
     }
   }
 }
-.Highlight-city-card + .Highlight-city-card {
+.Highlight-city-card + .Highlight-city-card,
+.Highlight-inspiration-content + .Highlight-inspiration-content {
   margin-left: 16px;
+}
+
+.Highlight-inspiration {
+  margin-top: 32px;
+  &-container {
+    position: relative;
+    display: flex;
+    margin-bottom: 16px;
+    .content-text-container {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      color: white;
+      padding: 10px 10px 15px;
+      display: table-cell;
+
+      .content-title {
+        text-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+      }
+      .content-description {
+        text-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+        font-size: 16px;
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+
+  &-content {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin-left: 15px;
+    border-radius: 3px;
+
+    img {
+      width: 100%;
+      border-radius: 3px;
+    }
+    &:hover img {
+      transform: scale(1.05);
+      transition: all 0.4s;
+      z-index: -1;
+    }
+  }
 }

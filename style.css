@@ -807,8 +807,142 @@ button {
   background-color: #f6f8ff;
 }
 
-.Highlight-city-card + .Highlight-city-card {
+.Highlight-city-card + .Highlight-city-card,
+.Highlight-inspiration-content + .Highlight-inspiration-content {
   margin-left: 16px;
+}
+
+.Highlight-inspiration {
+  margin-top: 32px;
+}
+.Highlight-inspiration-container {
+  position: relative;
+  display: flex;
+  margin-bottom: 16px;
+}
+.Highlight-inspiration-container .content-text-container {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: white;
+  padding: 10px 10px 15px;
+  display: table-cell;
+}
+.Highlight-inspiration-container .content-text-container .content-title {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+.Highlight-inspiration-container .content-text-container .content-description {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  position: relative;
+  z-index: 2;
+}
+.Highlight-inspiration-content {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin-left: 15px;
+  border-radius: 3px;
+}
+.Highlight-inspiration-content img {
+  width: 100%;
+  border-radius: 3px;
+}
+.Highlight-inspiration-content:hover img {
+  transform: scale(1.05);
+  transition: all 0.4s;
+  z-index: -1;
+}
+
+.Newsletter {
+  background-color: #00224f;
+  color: white;
+}
+.Newsletter .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Newsletter .container form {
+  padding-top: 20px;
+  text-align: start;
+}
+.Newsletter .container form label {
+  display: inline-block;
+  margin-top: 12px;
+}
+.Newsletter-text-container h3 {
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 3px;
+}
+.Newsletter-text-container p {
+  font-size: 16px;
+  color: #bdbdbd;
+}
+.Newsletter-content {
+  display: flex;
+  align-items: stretch;
+  height: 48px;
+  width: 550px;
+}
+.Newsletter-content input {
+  padding: 10px;
+  border-radius: 3px;
+  border: 0;
+  margin-right: 5px;
+  flex-grow: 2;
+}
+.Newsletter-content button {
+  border-radius: 3px;
+  flex-grow: 1;
+  background-color: #0071c2;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.Partners {
+  background-color: #003580;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Partners .btn-property {
+  background-color: transparent;
+  color: white;
+  padding: 8px;
+  margin-left: 8px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.Partners .btn-property:hover {
+  background-color: #ffffff1f;
+}
+
+.Footer-toplink {
+  border-top: 0.5px solid white;
+  background-color: #003580;
+}
+.Footer-toplink .container {
+  display: flex;
+  align-items: center;
+}
+.Footer-toplink a {
+  text-decoration: underline;
+  padding: 16px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
