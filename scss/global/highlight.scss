@@ -164,11 +164,76 @@
     img {
       width: 100%;
       border-radius: 3px;
+      transition: all 0.4s;
     }
     &:hover img {
       transform: scale(1.05);
-      transition: all 0.4s;
       z-index: -1;
+    }
+  }
+}
+
+.Highlight-homes {
+  margin-bottom: 32px;
+  &-container {
+    display: flex;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  &-card {
+    margin-right: 16px;
+    width: calc(100% - 64px);
+
+    img {
+      height: 250px;
+      width: 100%;
+      border-radius: 3px;
+    }
+  }
+  &-content {
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    .home-name {
+      color: #262626;
+    }
+    .home-subtitle {
+      color: #6b6b6b;
+      margin-top: 2px;
+    }
+    .home-bottom {
+      display: flex;
+      flex-direction: column;
+
+      .home-price {
+        margin-top: 8px;
+        font-weight: bold;
+      }
+      .home-points {
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+        .points {
+          background-color: $color-navy-blue;
+          color: white;
+          padding: 5px;
+          border-radius: 3px;
+          font-weight: 700;
+        }
+        p {
+          font-weight: bold;
+          color: #262626;
+          margin-left: 8px;
+        }
+        small {
+          color: #6b6b6b;
+          font-size: 12px;
+          margin-left: 8px;
+        }
+      }
     }
   }
 }
