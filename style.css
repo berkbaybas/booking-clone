@@ -757,6 +757,7 @@ button {
   border-radius: 8px;
   border: 1px solid #e7e7e7;
   padding: 16px;
+  margin-bottom: 24px;
 }
 .Highlight-subscribe-icon-container {
   background-color: #003580;
